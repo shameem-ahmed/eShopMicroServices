@@ -19,5 +19,4 @@ var app = builder.Build();
 //config http req pipeline
 app.MapCarter();
 
-
 app.Run();
