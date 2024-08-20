@@ -56,7 +56,7 @@ public class OrderConfiguration : IEntityTypeConfiguration<Order>
             paymentBuilder.Property(p => p.CardName).HasMaxLength(50);
             paymentBuilder.Property(p => p.CardNumber).HasMaxLength(24).IsRequired();
             paymentBuilder.Property(p => p.Expiration).HasMaxLength(10);
-            paymentBuilder.Property(p => p.CVV).HasMaxLength(3);
+            paymentBuilder.Property(p => p.Cvv).HasMaxLength(3);
             paymentBuilder.Property(p => p.PaymentMethod);
         });
 

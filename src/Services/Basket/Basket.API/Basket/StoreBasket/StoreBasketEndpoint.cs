@@ -15,10 +15,11 @@ public class StoreBasketEndpoint : ICarterModule
             var result = await sender.Send(command);
             var response = result.Adapt<StoreBasketResponse>();
             return Results.Created($"/basket/{response.UserName}", response);
-        }).WithName("StoreBasket")
-       .Produces<StoreBasketResponse>(StatusCodes.Status200OK)
-       .ProducesProblem(StatusCodes.Status400BadRequest)
-       .WithSummary("Store Basket")
-       .WithDescription("Store the basket");
+        })
+            .WithName("StoreBasket")
+           .Produces<StoreBasketResponse>(StatusCodes.Status200OK)
+           .ProducesProblem(StatusCodes.Status400BadRequest)
+           .WithSummary("Store Basket")
+           .WithDescription("Store the basket");
     }
 }
