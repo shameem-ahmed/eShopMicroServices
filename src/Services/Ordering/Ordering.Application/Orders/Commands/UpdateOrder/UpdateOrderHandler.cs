@@ -32,7 +32,6 @@ public class UpdateOrderHandler(IApplicationDbContext dbContext)
             orderDto.ShippingAddress.AddressLine,
             orderDto.ShippingAddress.Country,
             orderDto.ShippingAddress.State,
-            orderDto.ShippingAddress.City,
             orderDto.ShippingAddress.ZipCode);
 
         var updatedBillingAddress = Address.Of(
@@ -42,7 +41,6 @@ public class UpdateOrderHandler(IApplicationDbContext dbContext)
             orderDto.BillingAddress.AddressLine,
             orderDto.BillingAddress.Country,
             orderDto.BillingAddress.State,
-            orderDto.BillingAddress.City,
             orderDto.BillingAddress.ZipCode);
 
         var updatedPayment = Payment.Of(

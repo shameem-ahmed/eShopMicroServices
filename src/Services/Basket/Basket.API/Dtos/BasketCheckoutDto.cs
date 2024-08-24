@@ -16,8 +16,8 @@
         //Payment
         public string CardName { get; set; } = default!;
         public string CardNumber { get; set; } = default!;
-        public string Cvv { get; set; } = default!;
         public string Expiration { get; set; } = default!;
+        public string Cvv { get; set; } = default!;
         public string PaymentMethod { get; set; } = default!;
     }
 }

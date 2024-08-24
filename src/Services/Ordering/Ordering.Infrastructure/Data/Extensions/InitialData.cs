@@ -22,8 +22,8 @@ public class InitialData
     {
         get 
          {
-            var address1 = Address.Of("Shameem", "Ahmed", "shameem.net1@gmail.com", "#13, Khazi Saheb Street", "India", "TN", "Chennai", "60012");
-            var address2 = Address.Of("Shehbaz", "Akthar", "shehbaz777@apple.com", "#8, MK Garden Street", "India", "TN", "Chennai", "60001");
+            var address1 = Address.Of("Shameem", "Ahmed", "shameem.net1@gmail.com", "#13, Khazi Saheb Street", "India", "TN", "60012");
+            var address2 = Address.Of("Shehbaz", "Akthar", "shehbaz777@apple.com", "#8, MK Garden Street", "India", "TN", "60001");
 
             var payment1 = Payment.Of("Shameem", "1111222233334444", "12/28", "123", 1);
             var payment2 = Payment.Of("Shehbaz", "5555666677778888", "12/28", "789", 2);
